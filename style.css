@@ -1,0 +1,585 @@
+body{
+	margin: 10px 20px;
+	 
+	padding: 10px 20px;
+	 
+} 
+.hero{
+	width: 100%;
+	height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .4)), url(image/Capture.PNG) top,no-repeat;
+	background-size: cover;
+	color: white;
+	 
+}
+.bnner {
+    color: #fff;
+    width: 750px;
+    position: absolute;
+    top: 20%;
+	left: 50%; 
+	padding-top: 200px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+span{
+	font-weight: bold;
+	font-size: 20px;
+}
+.banner-heading  {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 80px;
+    text-transform: uppercase;
+    border-top: 7px solid #fff;
+	border-bottom: 7px solid #fff;
+	
+}
+.arrow {
+    font-size: 50px;
+    margin-bottom: 30px;
+    animation: anim 3s infinite;
+}
+@keyframes anim {
+    0% {transform: translateY(0)}
+    20% {transform: translateY(0)}
+    40% {transform: translateY(-30px)}
+    50% {transform: translateY(0)}
+    60% {transform: translateY(-15px)}
+    80% {transform: translateY(0)}
+    100% {transform: translateY(0)}
+}
+.banner-btn {
+    width: 200px;
+    padding: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: transparent;
+    color: #fff;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.banner-btn:hover {
+	transform: translateY(-1px);
+	background-color: #515A5A;
+	color: white;
+}
+.form-cntainer{
+	display: flex;
+    width: 800px;
+    height:420px;
+	position: absolute;
+	top:30%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+	box-shadow: 0 20px 50px rgba(0, 0, 0, .4);
+	 
+    visibility: hidden;
+	transition: opacity 1s;
+	
+
+     
+}
+.sign-up {
+    width:100%;
+    height: 200px;
+    padding: 50px;
+	box-sizing: border-box;
+	text-align:center ;
+	 
+}
+.sign-up input{
+	margin: 10px;
+	width: 220px;
+	height: 50px;
+	background: transparent;
+	color: white;
+	border-radius: 5%;
+	font-size: 30px;
+}
+.sub:hover{
+	background-color: #515A5A;
+}
+.x-btn {
+    position:top;
+    bottom: -6%;
+    right: 1%;
+    font-size: 23px;
+    font-weight: bold;
+	color:red;
+	font-weight: bold;
+    cursor: pointer;
+}
+@media(max-width: 850px) {
+    .form-cntainer {
+        width: 600px;
+        height: 400px;
+    }
+
+    .sign-up {
+        padding: 50px 30px;
+    }
+
+    .form-input {
+        width: 200px;
+        font-size: 14px;
+        margin-bottom: 30px;
+        padding: 7px 0;
+    }
+
+    .sign-up-form p {
+        font-size: 15px;
+    }
+
+    .sign-up-form label {
+        font-size: 13px;
+    }
+
+    .sign-up-form input[type="checkbox"] {
+        width: 25px;
+        height: 12px;
+    }
+
+    .sign-up-form input[type="checkbox"]::before {
+        width: 14px;
+        height: 14px;
+    }
+
+    .sign-up-form button {
+        margin-top: 50px;
+        width: 120px;
+        padding: 6px 4px;
+        font-size: 13px;
+        border-width: 1px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 800px) {
+    .banner {
+        width: 450px;
+    }
+
+    .banner-heading {
+        font-size: 60px;
+        margin-bottom: 40px;
+        border-width: 4px;
+    }
+
+    .arrow {
+        font-size: 30px;
+    }
+
+    .banner-btn {
+        width: 150px;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 650px) {
+    .header {
+        display: none;
+    }
+
+    .form-cntainer {
+        width: 300px;
+    }
+
+    .sign-up{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px) {
+    .bnner {
+        width: 300px;
+    }
+
+    .banner-heading {
+        font-size: 40px;
+    }
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	background-color: #DEDCDC;
+	padding: 10px;
+	height: 60px;
+	font-size: 30px;
+}
+.logo a{
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	color:black;
+	text-decoration: none;
+	}
+.navBar a{
+	padding: 5px;
+	text-decoration: none;
+	color: black;
+}
+.navBar a:hover{
+	color: white;
+	background-color: black;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+    width: 94%;
+    background-color: tomato;
+  }
+  
+  .sticky + .content {
+	padding-top: 60px;
+  }
+  .mywork{
+	  padding-top: 100px;
+	  text-align: center;
+	  font-size: 80px;
+  }
+  .mywork-card{
+	  display: flex;
+	  justify-content: right;
+	  margin: 150px;
+	   
+	  height: 100%;
+	  text-align: center;
+  }
+  .card1 {
+	  margin: 0 50px;
+	  width: 30%;
+	  background-color: #CCD1D1;
+      height: 600px;
+      
+  }
+  .card1 img{
+      width: 90%;
+      height: 90%;
+      padding: 10px;
+  }
+  .card1 button{
+      width: 100%;
+      font-size: 20px;
+      font-weight: bold;
+  }
+  .card1:hover{
+	  background-color:#EDBB99;
+  }
+  .card1 button:hover{
+      color: white;
+      background-color: black;
+  }
+  
+  .card2{
+	margin: 0 50px;
+	width: 30%;
+	height: 600px;
+  
+	background-color: #E2DEDE;
+}
+.card2 img{
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+}
+ 
+.card2:hover{
+	background-color: #EDBB99;
+}
+.card2 button{
+    width: 100%;
+    font-size: 20pX;
+    font-weight: bold;
+}
+
+.card2 button:hover{
+  color: white;
+  background-color: black;
+}
+.about{
+	text-align: center;
+	background-color: #FAFAFA;
+	padding-top: 50px;
+	 
+ 
+}
+.about img{
+	width: 25%;
+	height: 400px;
+	border-radius: 100%;
+	margin-top: 50px;
+}
+.about img:hover{
+	color: #E5E4E4;
+}
+ 
+.para{
+    text-align: center;
+    font-size: 30px;
+	 
+}
+.contact{
+	text-align: center;
+	background-color: #5D6D7E;
+	height: 700px;
+}
+ 
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width:100%;
+  height: 800px;
+  max-width: 700px;
+}
+
+ 
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.aboutImage{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+}
+.aboutlogo img{
+    width:100px;
+    height:200px;
+    margin: 10px;
+}
+.aboutlogo img:hover{
+    background-color: black;
+    color: blue;
+}
+.charge{
+    text-align: center;
+    width: 90%;
+}
+.chargeBar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.Basic{
+    width: 25%;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: blue;
+    background-color:#CCD1D1 ;
+}
+.Basic button{
+
+    color:white;
+    background-color:#00F869;
+    width: 90%;
+    height:60px;
+    border-radius: 5%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.Basic button:hover{
+    background-color: black;
+    color: white;
+}
+.Standard{
+    width: 25%;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: blue;
+    background-color:#CBE1D4;
+}
+.Standard button{
+
+    color:white;
+    background-color:#00F869;
+    width: 90%;
+    height:60px;
+    border-radius: 5%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.Standard button:hover{
+    background-color: black;
+    color: white;
+}
+
+.Premium{
+    width: 25%;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: blue;
+    background-color:#DCDBDB ;
+}
+.Premium button{
+    color:white;
+    background-color:#00F869;
+    width: 90%;
+    height:60px;
+    border-radius: 5%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.Premium button:hover{
+    background-color: black;
+    color: white;
+}
+.contact  {
+    display: flex;
+    height: 200px;
+    padding: 10px 0;
+   
+  }
+ .contact-icon {
+     background-color: #CCD1D1; 
+     height:120px;
+     width: 50%;
+     text-align: center;
+     
+ 
+  }
+  .contact-icon:hover{
+      background-color: #B0F3CD;
+      width: 55%;
+      height: 130px;
+  }
+  #icon{
+     font-size:50px; 
+     text-align: center;
+ 
+  }
+ .contact-icon1{
+     background-color: #3AF0F0; 
+     height:120px;
+     width: 50%;
+     text-align: center;
+ }
+ .contact-icon1:hover{
+    background-color: #69F5EC;
+    width: 55%;
+    height: 130px;
+}
+ .para{
+     font-size: 20px;
+     font-weight: bold;
+ }
+ .form{
+     height: auto;
+     text-align: center;
+      
+     padding: 2% 30%;
+     
+ }
+ .form-value{
+     text-align: left;
+     font-size: 25px;
+     color: white;
+
+     
+ }
+ .form-value input{
+     width:100%;
+     height: 40px;
+     border-radius: 5px;
+     background-color: transparent;
+     color: white;
+   
+ }
+ .form-value input:hover{
+     background-color: white;
+     color: black;
+ }
+ .form-value button{
+     font-size: 20px;
+     height: 50px;
+     padding: 10px;
+     border-radius: 5px;
+     background-color: black;
+     color: white;
+ 
+ }
+ .form-value button:hover{
+     color:black;
+     background-color: white;
+     cursor: pointer;
+ }
+.footer{
+    background-color: black;
+    font-size: 15px;
+    
+    text-align: center;
+    color: white;
+    
+     
+}
